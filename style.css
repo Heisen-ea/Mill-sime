@@ -1,61 +1,38 @@
-/* Base styles for your webpage, applied to all devices */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
 }
 
 .message-container {
     box-sizing: border-box;
-    width: 80%;
-    margin: auto;
-    max-width: 800px;
     padding: 20px;
+    margin: 20px;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 50px;
 }
 
-h1 {
-    color: #333333;
-}
-
-p {
-    color: #555555;
-    line-height: 1.6;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .message-container {
-        width: 90%;
-        margin-top: 30px;
-    }
-
+/* Adjust the font sizes for smaller screens */
+@media (max-width: 600px) {
     h1 {
-        font-size: 24px;
+        font-size: 28px; /* Increase the size of your heading */
     }
-
+  
     p {
-        font-size: 16px;
+        font-size: 18px; /* Increase the size of your paragraph text */
     }
-}
-
-@media (max-width: 480px) {
+  
     .message-container {
-        width: 95%;
-        margin-top: 20px;
-        padding: 15px;
+        margin: 10px; /* Reduce margin for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
     }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
+  
+    /* Increase the size of links for better touch targets */
+    a {
+        font-size: 18px;
+        display: inline-block;
+        margin: 5px 0; /* Add some margin around links */
     }
 }
